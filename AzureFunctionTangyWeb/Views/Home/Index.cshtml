@@ -1,0 +1,48 @@
+﻿@model SalesRequest
+<form method="post"  enctype="multipart/form-data">
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Enter your details to apply today!</p>
+    <div class="row">
+        <div class="col-3">
+            Name:
+        </div>
+        <div class="col-6">
+            <input asp-for="Name" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            Email:
+        </div>
+        <div class="col-6">
+            <input asp-for="Email" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            Phone:
+        </div>
+        <div class="col-6">
+            <input asp-for="Phone" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            Upload Headshot:
+        </div>
+        <div class="col-6">
+            <input type="file" class="form-control pt-1" name="file" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            
+        </div>
+        <div class="col-6">
+            <button type="submit" class="btn btn-success">Apply</button>
+        </div>
+    </div>
+</div>
+</form>
